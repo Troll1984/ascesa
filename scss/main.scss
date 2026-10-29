@@ -1,0 +1,94 @@
+@import './style.scss';
+body {  
+  min-width: 320px;
+  min-height: 100vh;
+  background: #b49a60;
+  
+  color: #fff;
+  font-size: 16px;
+}
+.container {
+     position: relative;
+    width: 90%;
+    margin: 0 auto;
+    background: #553d08;
+    
+}
+button {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+    button#btn-arowe-info {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: none;
+    }
+    .info {
+        margin-top: 30px;
+       height: auto;
+       max-height: 800px;
+       
+        display: none;
+        height: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        padding: 10px;
+        scrollbar-width: thin;
+        scrollbar-color: #3b2308 transparent;     
+    }
+    h3,h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+    p {
+        text-align:start;
+        margin-top: 10px;
+    }
+    .list {
+        list-style:decimal ;
+        text-align: start;
+    }
+    .list2 {
+        list-style: disc;
+        text-align: start;
+    }
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    z-index: 1000;   
+    list-style: none;    
+    width: 100%;          
+    margin: 0;
+    padding: 0;    
+    > li {
+        height: 40px;
+        line-height: 40px;
+        background: #553d08;
+        font-size: 0.8rem;
+        font-weight: bold;
+        width: 100%;      
+        border-radius: 8px;
+        text-align: center; 
+        border: 1px solid #362106;    
+         box-shadow: -3px -9px 18px -5px rgba(0,0,0,0.66);  
+        &:active {
+            transform: scale(0.95);
+            box-shadow: none;
+        }  
+    }
+}
+    

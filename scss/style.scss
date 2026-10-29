@@ -1,0 +1,122 @@
+.tamplate-place {    
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #a7774b;
+    padding: 15px;
+    .tamplate-asceses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+        h2, p {
+            text-align: center;
+        }
+        input {
+            width: 50%;
+            height: 40px;
+            border-radius: 10px;
+           padding-left: 15px;
+           
+        }
+    }
+    
+}
+#btn-arrowe-tamplate-place {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+#btn-arrowe-tamplate-place {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;  
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 35px;
+    width: 100%;
+
+    @media (max-width: 600px) {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 15px;
+
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+
+        padding-bottom: 10px;
+    }
+}
+
+.card {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    background: hsla(29, 56%, 16%, 0.418);
+    padding: 10px;
+    border-radius: 10px;
+    min-width: 0;
+    width: 100%;
+
+    .image {
+        flex: 0 0 90px;
+        width: 90px;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .info-text {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-width: 0;
+        gap: 8px;
+
+        h4, p, span {
+            margin: 0;
+            padding: 0;
+            overflow-wrap: anywhere;
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex: 0 0 85%;
+        width: 85%;
+        box-sizing: border-box;
+        scroll-snap-align: start;
+    }
+}
+.listen {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+      list-style: none; 
+      @media(max-width: 1200px){
+         width: 75%;
+      }
+      @media(max-width:900px){
+         width: 90%;
+      }
+      @media(max-width:700px){
+        display: none;
+      }
+     
+}
+
+  
